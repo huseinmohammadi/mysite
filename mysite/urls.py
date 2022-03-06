@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import httpreq , json_test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('httpreq',httpreq),
+    path('jsontest',json_test)
 ]
